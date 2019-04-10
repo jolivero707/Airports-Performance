@@ -1,0 +1,166 @@
+
+#map {
+  height: 500px;
+  width: 900px;
+}
+
+.hero {
+  position: relative;
+  margin: 0;
+}
+
+.hero h2 {
+  height: 250px;
+  margin-top: 40px; 
+  margin-bottom: 40px;  
+  font-size: 4rem;
+  color: rgb(245, 247, 248); 
+  animation: title 1.2s forwards linear;
+  background-image: url("../img/airplane.jpg");
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 1500px 250px;
+}
+
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 4.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes smaller-title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 5.5rem;
+    opacity: 1;
+  }
+}
+
+.accordion {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: azure;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+} 
+
+.header {
+padding-top: 40px;
+color: rgb(0, 132, 255);
+text-align: center;
+}
+
+.legend {
+  padding: 15px 15px;
+  font: 12px sans-serif;
+  font-weight: bold;
+  color: #555;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.legend i {
+  width: 20px;
+  height: 14px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+
+.btn {
+  background-color: #73434B;
+  opacity: .7;
+}
+
+
+.lead {
+    color: black 
+}
+
+h1 {
+    color: #B34D25 
+}
+
+.navbar-default .navbar-brand {
+    color: #d6d6d6;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #F07E07;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+.bg, .newsletter-bg {
+    background-image: url('../img/jumbotron2.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  
+  .bg {
+    background-position: center top;
+    padding: 100px 300px;
+    height: 100vh
+  }
+  
+  .wrap {
+    position: relative;
+  }
+  
+  .newsletter-bg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 30px;
+      margin: 0 auto;
+    background-position: center -100px;
+    -webkit-filter: blur(7px);
+  }
+  
+  .newsletter-text {
+      border: 2px solid #40284A;
+      padding: 50px;
+      margin: 0 auto;
+      position: relative;
+      max-width: 500px;
+      h2 {
+        color: white;
+        margin-top: 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
